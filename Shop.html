@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+/* Navigation Bar */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: inline-flex;
+  background-color: white;
+  width: 100%;
+  height:auto;
+  
+}
+
+
+
+.leftnav, .rightnav{
+  padding-top: 12px;
+
+  margin: 0;
+
+}
+
+.leftnav{
+  padding-left:10px;
+}
+
+.rightnav{
+  padding-right: 30px;
+}
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  
+  color: grey;
+}
+
+.navbar a.active {
+  color: black;
+}
+
+
+.imglink{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5.5%;
+  height: 2%;
+  padding-top: 12px;
+
+}
+
+.heading{
+  display: inline;
+}
+
+/* Body */
+
+* {
+  box-sizing: border-box;
+}
+
+/* .column1 {
+  background-color: white;
+  float: left;
+  width: 25%;
+  padding: 6%;
+} */
+.column1, .column2, .column3, .column4 {
+  background-color: white;
+  float: left;
+  width: 100%;
+  height:60%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Images grid */
+.imgrow1, .imgrow2  {
+  display: flex;
+  padding-right: 3%;
+}
+
+/* Create three equal columns that sits next to each other */
+.imgcolumn1, .imgcolumn2  {
+  flex: 33.33%;
+  padding: 2%;
+
+}
+
+.wp-block-image figcaption {
+    font-size: 10px;
+    color: #000000;
+}
+
+
+/* footer */
+.footer{
+  background-color: #E7F1FF;
+  padding-top: 3%;
+  padding-left: 10%;
+}
+
+.footer-contents{
+  display: inline-flex;
+  width: 100%;
+  height:auto;
+  padding-right: 1%;
+  
+}
+
+ul {
+    list-style-type: none;
+    padding: 2%;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top:0;
+    
+}
+
+li{ 
+  color:#172345;
+}
+
+#sicon{
+  padding: 4px; 
+}
+
+.f1 > li, .f2 > li, .f3 > li, .f4 > li{
+  padding-bottom:8%;
+}
+
+p {
+  white-space: pre;
+  font-family: monospace;
+}
+.b-contents {
+text-align: center;
+}
+
+.footerimg{
+  display: block;  
+  width: 7%;
+  height: 3%;
+  padding:0;
+  margin:0;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="leftnav">
+    <a class="active" href="#home">Shop</a>
+    <a href="#news">About <i class="fa fa-caret-down"></i></a>
+    <a href="#contact">Sustanibility</a>
+  </div>
+
+  <a class="imglink" href="Home.html"><img class="logoimg" src="images\logo.png"></a>
+  
+  
+
+  <div class="rightnav">
+    <a href="#about"><i class="fa fa-shopping-cart"></i> Cart</a>
+    <a href="Account.html">My Account</a>
+  </div>
+
+</div>
+
+<section class="container-fluid">
+  <div class="row">
+    
+    
+    <!-- <div class="column1">
+      <h2>Collections</h2>
+      <h3>All</h3>
+      <h3>Oral Care</h3>
+      <h3>Deodrant</h3>
+      <h3>Community Favorites</h3>
+      <h3>Bundles</h3>
+      <h3>Toothpaste Bits</h3>
+      <h3>Body</h3>
+      
+    </div>  -->
+
+
+
+    <div class="column1">
+      <h2>Oral Care</h2>
+      <div class="imgrow1">
+        <div class="imgcolumn1">
+          <img src="images/1.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Toothpaste Bits</figcaption>
+        </div>
+        <div class="imgcolumn1">
+          <img src="images/2.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>Whitening Gel</figcaption>
+        </div>
+        <div class="imgcolumn1">
+          <img src="images/3.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Mouthwash Bits</figcaption>
+
+        </div>
+      </div>
+      <div class="imgrow2">
+        <div class="imgcolumn2">
+          <img src="images/4.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Bamboo Toothbrush</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/5.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>Dental Floss</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/6.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Toothpaste Bits</figcaption>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column2">
+      <h2>Deodrant</h2>
+      
+      <div class="imgrow2">
+        <div class="imgcolumn2">
+          <img src="images/deo1.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Neroli Deodrant</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo2.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>Santal Deodrant</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo3.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Rose Vert Deodrant</figcaption>
+
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo4.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Fragrance-Free Deodrant</figcaption>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="column3">
+      <h2>Community Favorites</h2>
+      
+      <div class="imgrow2">
+        <div class="imgcolumn2">
+          <img src="images/1.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Toothpaste Bits Fresh Mint with Fluoride</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/2.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>Whitening Gel Teeth Whitening Kit</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo1.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Deodrant Neroli</figcaption>
+
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/cf4.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Body Balm</figcaption>
+
+        </div>
+      </div>
+
+
+      <div class="imgrow2">
+        <div class="imgcolumn2">
+          <img src="images/1.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Mouthwash Bits Fresh Mint</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo2.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>Daily Habits Kit 5-Piece Oral Care Kit</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/cf6.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Bamboo Toothbrush 2-pack </figcaption>
+
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/5.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>Dental Floss 2-pack</figcaption>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column4">
+      <h2>Bundles</h2>
+      
+      <div class="imgrow2">
+        <div class="imgcolumn2">
+          <img src="images/deo1.webp" alt="Snow"  style="width:100%" class="img-rounded">
+          <figcaption>Daily Habits Kit</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo2.webp" alt="Forest" style="width:100%" class="img-rounded">
+          <figcaption>The Duo</figcaption>
+        </div>
+        <div class="imgcolumn2">
+          <img src="images/deo3.webp" alt="Mountains" style="width:100%" class="img-rounded">
+          <figcaption>The Starter Set</figcaption>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer">
+    <img class= "footerimg" src="images/footerlogo.png" >
+
+    <div class="footer-contents">
+
+      <ul class="f1">
+        <h2>Shop</h2>
+        <li>All Products</li>
+        <li>Toothpaste Bits</li>
+        <li>Deodrants</li>
+        <li>Gift Sets</li>
+        <li>Wholesale</li>
+        
+        
+      </ul>
+  
+      <ul class="f2">
+        <h2>About</h2>
+        <li>About us</li>
+        <li>Reviews</li>
+        <li>Sustanibility</li>
+        <li>Ingredients</li>
+        <li>Blog</li>
+        <li>FAQ</li>
+        <li>Find us in stores</li>
+        
+        
+        
+      </ul>
+
+
+      <ul class="f3">
+        <h2>Follow Us</h2>
+        <li>
+          <i id="sicon" class="fa fa-instagram"></i>
+          <i id="sicon" class="fa fa-facebook"></i>
+          <i id="sicon" class="fa fa-twitter"></i>
+          <i id="sicon" class="fa fa-whatsapp"></i>
+        </li>
+        
+
+        
+        <h2>Press</h2>
+        <li>Press Coverage</li>
+        <li>Press Inquiries: Email us</li>
+      </ul>
+
+      <ul class="f4">
+
+        <h2>Accessibility</h2>
+        <li>Please see our accessibility statement for assistance.<br>  
+          Accessibility Statement</li>
+        
+
+        
+        <h2> Contact us</h2>
+        <li>Help Center</li>
+        <li>Email us</li>
+      </ul>
+
+      
+    </div>
+    <hr style="width:90%; background-color:#fcfcfc">
+
+    <div class="b-contents">
+      <p>Copyright &copy 2022, Bite.</p>      
+      <p>Accessibility Statement    Privacy policy    Terms of service</p>
+    </div>
+
+    <br><br>
+    
+
+  </div>
+</footer>
+
+</body>
+</html>
